@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Lost Productions PDX</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
+
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color:#151313;
+                color: white;
+                font-size: 1.1rem;
+            }
+
+            p {
+                max-width: 650px;
+            }
+            
+            main {
+                padding: 2em;
+                margin: 2em;
+            }
+            
+            aside {
+                margin-left: -2rem;
+            }
+
+            aside img {
+                width: 30%;
+                margin: 2rem 1rem;
+                height: auto;
+            }
+
+            @media screen and (max-width: 800px) {
+                aside img {
+                    width: 95%;
+                    margin: 1rem auto;
+                }
+            }
+
+            #logo {
+                max-width: 400px;
+                height: auto;
+            }
+
+            a {
+                color: rgb(122, 191, 85);   
+                transition: 250ms color ease-in-out;           
+            }
+            
+            a:visited, a:active {
+                color: rgb(50, 53, 200);
+            }
+
+            a:hover {
+                color: rgb(176, 0, 255);
+            }
+
+
+            .sr-only {
+                /* ref: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034 */
+                border: 0 !important;
+                clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+                -webkit-clip-path: inset(50%) !important;
+                    clip-path: inset(50%) !important;  /* 2 */
+                height: 1px !important;
+                margin: -1px !important;
+                overflow: hidden !important;
+                padding: 0 !important;
+                position: absolute !important;
+                width: 1px !important;
+                white-space: nowrap !important;            /* 3 */
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <img id="logo" src="logo@2x.png" alt="A brightly colored logo of a moon behind two palm trees and the words Lost Production">
+            <h1 class="sr-only">Lost Productions PDX</h1>
+            <p>Lost Productions is a full-service production firm based in Portland, OR. We specialize in audio, lighting, and live-streaming systems for events and installations.</p>
+            <p>We're currently building our website, so while you're waiting:</p>
+            <ul>
+                <li>Follow us on Instagram — <a href="https://www.instagram.com/lostproductionspdx/"><span class="sr-only">Our Instagram handle is </span>@lostproductionspdx</a></li>
+                <li>Check out our <a href="https://lostproductions.booqable.shop/">equipment available for rent</a></li>
+                <li>Call David to chat — <a href="tel:5554280940" ><span class="sr-only">His phone number is </span>(503) 512-9095</a></li>
+            </ul>
+            <aside>
+                <img src="slider_1.JPG">
+                <img src="slider_2.JPG">
+                <img src="slider_3.JPG">
+            </aside>
+        </main>
+    </body>
+</html>
